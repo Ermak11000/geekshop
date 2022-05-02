@@ -246,3 +246,5 @@ if DEBUG:
         "template_profiler_panel.panels.template.TemplateProfilerPanel",
     ]
 # <--- Django Debug Toolbar
+=======
+SOCIAL_AUTH_GITHUB_SECRET = github_auth["client_secret"]

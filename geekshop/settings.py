@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 AUTH_USER_MODEL = "authnapp.ShopUser"
 
 MIDDLEWARE = [
+    #"django.middleware.cache.UpdateCacheMiddleware",  # for entire site caching
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -48,6 +49,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "social_django.middleware.SocialAuthExceptionMiddleware",
+    #"django.middleware.cache.FetchFromCacheMiddleware",  # for entire site caching
 ]
 
 ROOT_URLCONF = "geekshop.urls"

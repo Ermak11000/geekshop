@@ -14,5 +14,4 @@ class Migration(migrations.Migration):
             model_name="order",
             name="is_active",
             field=models.BooleanField(db_index=True, default=True, verbose_name="активен"),
-        ),
-    ]
+        ),   ]
